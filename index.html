@@ -4,39 +4,69 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Jake Sorce</title>
-	<!-- Compiled and minified CSS -->
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	 <!-- Compiled and minified JavaScript -->
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+	 .card {
+	   padding: 20px !important;
+	 }
+	 .main {
+	   margin-top: 30px;
+	 }
+	 body {
+	   display: flex;
+	   min-height: 100vh;
+	   flex-direction: column;
+	 }
+
+	 main {
+	   flex: 1 0 auto;
+	 }
+	</style>
+	<script>
+	  $(document).ready(function(){
+	  	$(".button-collapse").sideNav();
+	  });
+	</script>
 </head>
-<body class='grey darken-3 white-text center'>
-	<h1>Jake Sorce Github IO</h1>
-	<br />
-	<h4>Teaching Material</h4>
-	<div class='row'>
-	  <div class='card grey col s6'>
-	    <div class='card-title'>
-	      Working With API's / Has Many Through (Spoonacular)
-	    </div>
-	    <div class='card-content'>
-	      A Ruby on Rails tutorial that shows working with the third party Spoonacualr API with a has_many_through example
-	    </div>
-	    <div class='card-action'>
-	      <a class='btn' href='spoonacular-api-has-many-through/index.html'> Go </a>
-	    </div>
+<body class='grey darken-3 white-text'>
+  <nav class='black white-text'>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo">Jake Sorce</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./teaching-material/index.html">Teaching Material</a></li>
+      </ul>
+      <ul id="mobile-demo" class="side-nav">
+        <li><a href="./teaching-material/index.html">Teaching Material</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+	  <div class='main center'>
+		  <img class='responsive-img circle' src="jake-mal-climbing.jpg" alt="Jake And Mal Climbing In Moab" width='350px' />
+			<h5>Sr. Ruby on Rails && JavaScript Developer | Software Bootcamp Educator | Travel Enthusiast | Entrepreneur</h5>
+			<hr />
+			<div class='row'>
+				<div class='card black-text col s12 m6 offset-m3'>
+					<strong>I've been developing sofware since 2011 when I graduated from Neumont University with my Bachelors of Science in Computer Science.</strong>
+				</div>
+		  </div>
 	  </div>
-	  <div class='card grey col s6'>
-	    <div class='card-title'>
-	       Rails - Nested Attributes (User with Address Example)
-	    </div>
-	    <div class='card-content'>
-	      A Ruby on Rails tutorial demonstrating an example of Nested Attributes / Nested Form with a User and Address model
-	    </div>
-	    <div class='card-action'>
-	      <a class='btn' href='rails-nested-attributes/index.html'> Go </a>
-	    </div>
-	  </div>
-	</div>
+  </main>
+  <footer class="page-footer black white-text center">
+    <a href="https://github.com/jakesorce" target='_blank'>Github</a> |
+    <a href="http://cottonwoodcoding.com"  target='_blank'>Cottonwood Coding</a> |
+    <a href="https://github.com/cottonwoodcoding"  target='_blank'>Cottonwood Coding Github</a> |
+    <a href="https://linkedin.com/in/jakesorce"  target='_blank'>LinkedIn</a>
+    <div class="footer-copyright">
+      <div class="">
+      © 2016 Jake Sorce
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
